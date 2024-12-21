@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #ff5e00;
+  --secondary-color: #ff9b3d;
+  --heading-color: #2e3a47;
+  --text-color: #8a8f96;
+  --font-name: "Montserrat", sans-serif;
+  --subtitle-font-name: "Island Moments", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+  background-color: #f4f6f9;
+  color: var(--text-color);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.primary__btn {
+  background: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.6rem 2rem !important;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.primary__btn a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.primary__btn a:hover {
+  color: #fff;
+}
+
+.primary__btn:hover {
+  background-color: #ff4500;
+}
+
+.secondary__btn {
+  background: transparent !important;
+  color: var(--heading-color) !important;
+  border: 2px solid var(--heading-color) !important;
+  font-weight: 500 !important;
+  border-radius: 30px !important;
+  padding: 0.5rem 1.8rem !important;
+  transition: all 0.3s ease;
+}
+
+.secondary__btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--heading-color);
+  display: inline-block;
+}
+
+.secondary__btn a:hover {
+  color: inherit;
+}
+
+.secondary__btn:hover {
+  background-color: var(--heading-color);
+  color: #fff;
+  border-color: var(--heading-color);
+}
+
+.section__subtitle {
+  background: var(--secondary-color);
+  font-family: var(--subtitle-font-name);
+  width: max-content;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section__subtitle:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}

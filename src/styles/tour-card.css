@@ -1,0 +1,129 @@
+/* Tour Image Styling */
+.tour__img img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Slightly larger border-radius for smoother edges */
+    transition: transform 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.tour__img:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Card Container */
+.card {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px; /* Softer shadow for a modern look */
+    border-radius: 10px; /* Rounded corners for a sleek appearance */
+}
+
+/* Tour Image Label */
+.tour__img span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    background: #ff5a5f; /* Vibrant red for 'Featured' */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0 0 0 10px;
+}
+
+/* Top Section of the Card (Location & Rating) */
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tour__location {
+    color: #666; /* Subtle gray for the location */
+    font-size: 0.95rem;
+}
+
+.tour__location i {
+    color: #ff5a5f; /* Same color as the 'Featured' badge for consistency */
+    font-size: 1rem;
+}
+
+.tour__rating {
+    font-size: 1rem;
+    color: #ff5a5f; /* Rating stars match the 'Featured' badge */
+}
+
+.tour__rating i {
+    font-size: 1.2rem;
+    color: #ff5a5f;
+}
+
+/* Tour Title */
+.tour__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #333; /* Darker text for better readability */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tour__title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tour__title a:hover {
+    color: #ff5a5f; /* Active link color */
+}
+
+/* Bottom Section of the Card (Price & Book Now Button) */
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card__bottom h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333; /* Dark text for price */
+}
+
+.card__bottom h5 span {
+    font-size: 0.85rem;
+    color: #666; /* Lighter color for '/per person' text */
+}
+
+/* Booking Button */
+.booking__btn {
+    background-color: #ff5a5f !important;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking__btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.booking__btn:hover {
+    background-color: #e0474a; /* Slightly darker on hover */
+}
+
+/* Rating Component */
+.rating__group span {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: #ff5a5f;
+    cursor: pointer;
+}
+
+.rating__group span:hover {
+    color: #e0474a; /* Darker shade on hover for interactive effect */
+}

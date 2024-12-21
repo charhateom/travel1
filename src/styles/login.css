@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; 
+    color: #333; 
+    line-height: 1.6;
+  }
+  
+
+  .login__section {
+    padding: 80px 0;
+  }
+  
+  .login__container {
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .login__img {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .login__img img {
+    width: 70%;
+    object-fit: contain;
+  }
+  
+  /* 3. Login Form Styles */
+  .login__form {
+    width: 50%;
+    padding: 40px;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+    position: relative;
+  }
+  
+  .login__form .user {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  }
+  
+  .login__form .user img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .login__form h2 {
+    text-align: center;
+    color: #fff; 
+    margin-bottom: 1.5rem;
+  }
+  
+
+  .login__form input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login__form input:focus {
+    outline: none;
+    border-color: #ff5733;
+  }
+
+  .auth__btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff5733; 
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth__btn:hover {
+    background-color: #c7461f; 
+  }
+  
+  /* 6. Link Styles */
+  .login__form p {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1.5rem;
+  }
+  
+  .login__form p a {
+    color: #ff5733; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .login__form p a:hover {
+    color: #c7461f; 
+  }
+ 
+  @media (max-width: 767px) {
+    .login__container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .login__img {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .login__form {
+      width: 100%;
+      padding: 2rem;
+    }
+  
+    .login__form input {
+      padding: 0.7rem 1rem;
+    }
+  
+    .auth__btn {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+  
